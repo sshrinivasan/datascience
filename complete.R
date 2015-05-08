@@ -5,11 +5,11 @@ complete_cases <- function(filename) {
 }
 
 ## NUMBER OF COMPLETE CASES
-complete <- function(directory, id = 1:332) {
+complete <- function(directory, id=1:332) {
   
   # By default, take all files
   c <- sprintf("%03d", id)
-  csv_files = paste(directory, "/", c,".csv", sep = "")
+  csv_files = paste(directory, "/", c, ".csv", sep = "")
   
   # Create a numeric vector to store the counts
   vals = numeric(0)

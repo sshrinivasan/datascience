@@ -3,9 +3,10 @@ pollutant_correlation <- function(filename) {
   
   df = read.csv(filename)
   return(cor(df["sulfate"], df["nitrate"], use = "complete.obs"))
-  
 }
-corr <- function(directory, threshold = 0) {
+
+
+corr <- function(directory, threshold=0) {
   # Get number of observations per station
   allStations = complete(directory, 1:332)
   # Create DF for only those stations above the threshold
